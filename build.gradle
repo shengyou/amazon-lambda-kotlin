@@ -1,15 +1,19 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.4.10'
 }
+
 group = 'io.kraftsman'
 version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
+
 dependencies {
-    testImplementation 'org.jetbrains.kotlin:kotlin-test-junit'
+    implementation "com.github.javafaker:javafaker:1.0.2"
+    testImplementation "org.jetbrains.kotlin:kotlin-test-junit"
 }
+
 compileKotlin {
     kotlinOptions.jvmTarget = '11'
 }
